@@ -1,0 +1,136 @@
+<!-- Material form login -->
+<div>
+<div class="jumbotron jumbotron-fluid bg-dark">
+  
+        <div class="jumbotron-background">
+          <img src="https://forepoint.co.uk/wp-content/uploads/2018/01/DXC-cover.jpg" class="blur ">
+        </div>
+<div class="container" style="margin-top: -40px;">
+    <!-- Image and text -->
+<nav class="navbar navbar-light" style="border-radius: 10px;padding: 30 10 10 10;
+                                        background-color: black;"  >
+        <a class="navbar-brand" href="#" style="padding: 30 10 10 10;color: white;">
+          <img style="margin-left: 8px;" src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/5dcdbf2b48ea81000114cf50/picture" width="100" height="80" class="d-inline-block align-top" alt="">
+          <h6 style="margin-right: 20px;">CROWDSOURCE</h6>
+        </a>
+      </nav>
+    <div class="row" style="padding-top: 20px;">
+        <div class="col-6">
+
+<div class="card" style="height: 420px;background-color: yellow;">
+        
+    <h5 class="card-header info-color white-text text-center py-4">
+      <strong>Sign-in as Admin</strong>
+    </h5>
+  
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0" style="background: black;">
+  
+      <!-- Form -->
+      <form class="text-center"  style="color: #757575;" action="#!">
+  
+        <!-- Email -->
+        <div class="md-form" style="padding-top: 50px;">
+          <input type="text" id="materialLoginFormEmail" class="form-control"  placeholder="E-mail" required="admin">
+          
+        </div>
+  
+        <!-- Password -->
+        <div class="md-form" style="padding-top: 25px;">
+          <input type="password" [(ngModel)]="password" id="materialLoginFormPassword" class="form-control" placeholder="Password" required="admin">
+          
+        </div>
+  
+        <div class="d-flex justify-content-around">
+          
+          <div>
+            <!-- Forgot password -->
+            <br>
+            <a href="" style="margin-left: -320px; padding-top: 50px; color: white;">Forgot password?</a>
+          </div>
+        </div>
+  
+        <!-- Sign in button -->
+        <button class="btn  btn-rounded btn-block my-4 waves-effect z-depth-0"
+                style="background-color: yellow; color: black;"
+                 type="submit" routerLink="adminhome"><strong> Sign-in</strong></button>
+  
+  
+      </form>
+      <!-- Form -->
+  
+    </div>
+  </div>
+  </div>
+  <div class="col-6">
+
+    <div class="card" style="height: 400px;background-color: yellow;">
+    
+        <h5 class="card-header info-color white-text text-center py-4">
+          <strong>Sign-in as User</strong>
+        </h5>
+      
+        <!--Card content-->
+        <div class="card-body px-lg-5 pt-0" style="background: black;">
+      
+          <!-- Form -->
+          <form class="text-center" (ngSubmit)="login()" style="color: #757575;" action="#!">
+      
+            <!-- Email -->
+            <div class="md-form" style="padding-top: 50px;">
+              <input type="text"  name="username" [(ngModel)]="username" id="materialLoginFormEmail" class="form-control"  placeholder="E-mail">
+              
+            </div>
+      
+            <!-- Password -->
+            <div class="md-form" style="padding-top: 25px;">
+              <input type="password" name="password" [(ngModel)]="password" id="materialLoginFormPassword" class="form-control" placeholder="Password">
+              
+            </div>
+            <br>
+            <div class="d-flex justify-content-around">
+              
+              <div>
+                  
+                <!-- Forgot password -->
+                <a href="" style="margin-left: -320px; padding-top: 50px;color:white;">Forgot password?</a>
+              </div>
+            </div>
+      
+            <!-- Sign in button -->
+            <button class="btn  btn-rounded btn-block my-4 waves-effect z-depth-0"
+                     type="submit"  style="background-color: yellow; color: black;" >Sign in</button>
+      
+            <!-- Register -->
+            <p>Not a member
+              <a routerLink="register">Register</a>
+            </p>
+      
+          </form>
+          <!-- Form -->
+      
+        </div>
+      </div>
+      </div>
+
+  </div>
+
+  <!-- Footer -->
+  <br>
+<footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style="background-color: black;color: white;border-radius: 10px;">
+          <a href="https://www.dxc.technology/about_us" style="color: white;">About Us </a><br>
+          <a href="https://www.dxc.technology/contact_us" style="color: white;">Contact Us </a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+
+</div>
+</div>
+</div>
+
+  <!-- Material form login -->

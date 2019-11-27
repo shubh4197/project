@@ -1,0 +1,30 @@
+<div class="container">
+    <h3 style="text-align: center;">Available Posts</h3>
+        <div *ngFor="let zip of posts" class="card border-light text-white bg-dark mb-3">
+              
+              <div class="card-body">
+                <h5 class="card-title">{{zip.projectname}}</h5>
+                <p class="card-text">{{zip.description}}</p>
+                <button class="btn btn-primary" (click)="apply(zip.id)" data-toggle="modal" data-target="#exampleModal">Apply</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel"></h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Successfully Applied</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+              </div>

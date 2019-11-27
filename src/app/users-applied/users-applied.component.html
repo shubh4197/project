@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">Crowd Sourcing</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/addposts" >Add Post <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" routerLink="/viewposts">View Post</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <br>
+      <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">User Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let zip of candidates">
+                <td>{{zip.id}}</td>
+                <td>{{zip.name}}</td>
+                <button type="submit"class="btn btn-dark" (click)="profile(zip.id)">View Profile</button>
+              </tr>
+              
+            </tbody>
+          </table>
+          
